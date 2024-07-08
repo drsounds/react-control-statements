@@ -2,7 +2,7 @@
   "name": "@buddhaflow/react-control-statements",
   "version": "1.0.0",
   "description": "Control statements for React.JS",
-  "main": "dist/cjs/index.js",  
+  "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/drsounds"
@@ -13,14 +13,13 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "rollup": "rollup -c"      
+    "rollup": "rollup -c"
   },
   "author": "Alexander Forselius",
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-typescript": "^11.1.6",
     "@types/node": "^20.14.10",
     "@types/react": "^18.3.3",
     "react": "^18.3.1",
@@ -31,5 +30,9 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
+    "tslib": "^2.6.3"
+  }
 }
